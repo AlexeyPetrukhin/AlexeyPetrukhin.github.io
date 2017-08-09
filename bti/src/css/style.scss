@@ -1,0 +1,230 @@
+$grid: 15%;
+
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url(/bti/src/font/MuseoSansRegular.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Museo Sans Cyrl";
+  outline: none;
+}
+
+// ------------------   Верхнее меню(Дата, поиск) --------
+
+.nav-nav-bar {
+  width: 100%;
+  height: 60px;
+  background: #0065AD;
+
+  .groupnav {
+    float: none;
+    line-height: 60px;
+    padding-left: $grid;
+    padding-right: $grid;
+  }
+
+  .datetime {
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  .search {
+    float: right;
+    input {
+      height: 35px;
+      width: 300px;
+      font-size: 16px;
+      border: none;
+      border-radius: 50px;
+      padding-left: 15px;
+      outline: none;
+    }
+
+    button {
+      font-size: 16px;
+      border-radius: 50px;
+      margin-left: 5px;
+      color: #fff;
+      height: 35px;
+      width: 100px;
+      border: solid 1px;
+      border-color: #ffffff;
+      background: none;
+      cursor: pointer;
+      transition: 0.3s all;
+
+    }
+    button:hover{
+      background: #fff;
+      color:#0065AD;
+      transition: 0.3s all;
+
+    }
+
+  }
+}
+
+// ------------- /Верхнее меню ---------------------ъ
+
+
+// ----------------  HEADER ---------------------------
+
+.nav-bar {
+  width: 100%;
+  height: 200px;
+  background: #0060A5;
+  .logo {
+    padding-left: $grid;
+    padding-right: $grid;
+    .logoimg{
+      float: left;
+      width: 75px;
+      height: 140px;
+
+      img {
+        width: inherit;
+        height: inherit;
+        padding-top:25px;
+      }
+    }
+    .logo-text{
+      padding-top: 70px;
+      margin-left: 6%;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      #bti{
+        font-size: 26px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .info {
+    float: right;
+    padding-left: $grid;
+    padding-right: $grid;
+    margin-top: -45px;
+    color: #fff;
+    .phone{
+      float: left;
+      text-align: center;
+      line-height: 23px;
+      margin-right: 100px;
+      .titlephone{
+        font-size: 20px;
+      }
+      span {
+        font-size: 19px;
+      }
+
+    }
+    .userlogin{
+      float: right;
+      font-size: 20px;
+      a{
+        text-decoration: none;
+        color:#fff;
+
+      }
+    }
+  }
+
+}
+
+// ---------------- /HEADER ---------------------------
+
+
+
+// ---------------- MENU ---------------------------
+
+.nav{
+  width: 100%;
+  height: 60px;
+  background: #0060A5;
+  .primarymenu{
+    padding-left: $grid;
+    padding-right: $grid;
+    font-size: 16px;
+    font-weight: 400;
+    ul {
+      list-style-type: none;
+      text-align: center;
+      line-height: 60px;
+      li{
+        display: inline;
+        margin-left: 70px;
+      }
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      opacity: 0.8;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+    a:hover {
+      opacity: 1;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;    }
+    .startmenu{
+      margin-left: 0px;
+    }
+  }
+
+}
+
+// ---------------- /MENU ---------------------------
+
+
+
+// ---------------- SLIDER ---------------------------
+
+.slider {
+  width:100%;
+  height: 450px;
+  //background: red;
+
+  .imageslider{
+    width: 100%;
+    height: 450px;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+
+// ---------------- /SLIDER ---------------------------
+
+// ---------------- NEWS ---------------------------
+
+.newsblock{
+  width: 100%;
+
+  .newstitle{
+    padding-left: $grid;
+    padding-right: $grid;
+    h1 {
+      font-size: 25px;
+      margin-top: 20px;
+      font-weight: 600;
+      color: #0060A5;
+
+    }
+  }
+
+}
+
+// ---------------- /NEWS ---------------------------
